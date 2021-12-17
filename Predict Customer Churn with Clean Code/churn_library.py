@@ -22,6 +22,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
 
+import os
+os.environ['QT_QPA_PLATFORM']='offscreen'
+
 # display message
 logging.basicConfig(
     level=logging.INFO,
