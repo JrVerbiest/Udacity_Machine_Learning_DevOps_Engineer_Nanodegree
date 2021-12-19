@@ -1,14 +1,17 @@
 '''
-A library of functions for the Customer Churn Project
-A Udacity ML DevOps Engineer Nanodegree Project.
+This module will:
+- import the data
+- perform EDA
+- perform feature engineering
+- generate reports
+- train and test a model
+
+Author: "Joeri R. Verbiest"
+Date: 19 December 2021
 
 '''
 
-__author__ = "Joeri R. Verbiest"
-__copyright__ = "Copyright 2021, Customer Churn Project"
-__license__ = "MIT"
-__version__ = "1.0"
-
+import os
 import logging
 from sklearn.metrics import plot_roc_curve, classification_report
 from sklearn.model_selection import GridSearchCV
@@ -22,8 +25,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
 
-import os
-os.environ['QT_QPA_PLATFORM']='offscreen'
+os.environ['QT_QPA_PLATFORM'] = 'offscreen'
 
 # display message
 logging.basicConfig(
@@ -336,3 +338,4 @@ if __name__ == "__main__":
 
     logger.info("Train and store model en results.")
     train_models(X_TRAIN, X_TEST, Y_TRAIN, Y_TEST)
+
