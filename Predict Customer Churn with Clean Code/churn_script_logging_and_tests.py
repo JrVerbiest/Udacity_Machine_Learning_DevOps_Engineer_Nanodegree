@@ -1,23 +1,25 @@
 '''
-Test script dor for the Customer Churn Project
-A Udacity ML DevOps Engineer Nanodegree Project.
+This module perfom test & logging for churn_library.py file
+
+- test data import
+- test EDA
+- test data encoder
+- test feature enginering
+- test train model 
+
+Author: "Joeri R. Verbiest"
+Date: 19 December 2021
 
 '''
-
-
-__author__ = "Joeri R. Verbiest"
-__copyright__ = "Copyright 2021, Customer Churn Project"
-__license__ = "MIT"
-__version__ = "1.0"
-
 
 import os
 import logging
 import churn_library as cls
 
-import os
 os.environ['QT_QPA_PLATFORM']='offscreen'
 
+for handler in logging.root.handlers[:]:logging.root.removeHandler(handler)
+    
 logging.basicConfig(
     filename='./logs/churn_library.log',
     level=logging.INFO,
@@ -155,3 +157,4 @@ if __name__ == "__main__":
     X_TRAIN, X_TEST, Y_TRAIN, Y_TEST = test_perform_feature_engineering(
         cls.perform_feature_engineering, DATA)
     test_train_models(cls.train_models, X_TRAIN, X_TEST, Y_TRAIN, Y_TEST)
+
