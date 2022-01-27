@@ -34,4 +34,6 @@ After completion, the student will have a working API that is live in production
 
 In this project, students will make predictions about attrition risk in a fabricated dataset. They’ll set up automated processes to ingest data and score, re-train, and re-deploy ML models that predict attrition risk. They’ll write scripts to automatically check for new data and check for model drift. They’ll also set up API’s that allow users to access model results, metrics, and diagnostics. After completing this project, students will have a full end-to-end, automated ML project that performs risk assessments. This project can be a useful addition to students’ portfolios, and the concepts they apply in the project can be applied to business problems across a variety of industries.
 
+[My Project Solution](https://github.com/JrVerbiest/Udacity_Machine_Learning_DevOps_Engineer_Nanodegree/tree/main/Dynamic%20risk%20assessment%20system)
+
 ---
